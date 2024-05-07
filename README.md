@@ -4,7 +4,7 @@
 <h5>Curso: Engenharia de Software<br>
 Disciplica: Banco de Dados Não Relacionais<br>
 Professor: Fabricio Tadeu Dias<br>
-Período: 6° Período<br>
+Período: 5° Período<br>
 Aluno: Gabriel Victor Martins Carvalho</h5>
 
 ##
