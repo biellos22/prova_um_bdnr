@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a8a5a5;
+        }
+        
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%); 
+        }
+        
+        .login-container {
+            background-color: #5a5a5a; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px; 
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        h2, h3 {
+            margin-top: 0;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 10px; 
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        button {
+            padding: 15px;
+            margin-bottom: 20px; 
+            border: none; 
+            border-radius: 25px; 
+        }
+        
+        button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+        
+        p#error-message {
+            color: #ff0000;
+            margin-top: 15px;
+        }        
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <div class="login-container">
+            <h3 align="center">LOGIN</h3>
+            <form id="loginForm">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">LOGIN</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
